@@ -4,82 +4,100 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HOME</title>
+    <title>home</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
     <header>
 
-        <div class="barnav">
-            <img class="logotipo" src="" alt="logotipo de da pagina">
-            <nav>
-                <ul class="menu">
-                    <li><a href="">HOME</a></li>
-                    <li><a href="">SOBRE MIN</a></li>
-                    <li><a href="">PORTFOLIO</a></li>
-                    <Li class="linhaMenu"><a href="">CONTATO</a></Li>
-                </ul>
-
-                <ul class="social">
-                    <li><a href=""><img src="" alt="icone facebook"></a></li>
-                    <li><a href=""><img src="" alt="icone you tube"></a></li>
-                    <li><a href=""><img src="" alt="icone linkedin"></a></li>
-                </ul>
-            </nav>
-        </div>
-
-        <p> eu posso ajudar no seus projetos de</p>
-        <h1 class="titulochange">Edicion de vídeo</h1>
-        <p>christians <strong> J.M.C</strong></p>
-
         <picture>
             <source srcset="" media="(min-width: 800px)">
             <source srcset="" media="(min-width: 600px)">
-            <img src="#" alt="ilustration imagem centro">
+            <img src="images/fondoimage.png" alt="ilustration imagem cover">
         </picture>
 
-        <a href="#secSobremin"><img src="" alt="">hola</a>
+        <div class="paddininterno">
+            <div class="barnav">
+                <img class="logotipo" src="icon/logotpagq.png" alt="logotipo de da pagina">
+                <nav>
+                    <ul class="menu">
+                        <li><a href="">HOME</a></li>
+                        <li><a href="">SOBRE MIN</a></li>
+                        <li><a href="">PORTFOLIO</a></li>
+                        <Li class="linhaMenu"><a href="">CONTATO</a></Li>
+                    </ul>
 
+                    <ul class="social">
+                        <li><a href=""><img src="icon/facebookicon.png" alt="icone facebook"></a></li>
+                        <li><a href=""><img src="icon/youtibeicon.png" alt="icone you tube"></a></li>
+                        <li><a href=""><img src="icon/linkedinicon.png" alt="icone linkedin"></a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="titulo">
+                <p> eu posso ajudar no seus projetos de</p>
+                <p class="titulochange">EDIÇAO DE VIDEO</p>
+                <h1>christians<span>J.M.C</span></h1>
+            </div>
+        </div>
     </header>
+
     <main>
         <section class="secServices">
             <h2>SERVIÇOS</h2>
             <ul>
-                <li><img src="" alt="imagem desemvolvimento web"> <samp>Desemvolvedor web</samp>
+                <li>
+                    <figure>
+                        <figcaption>Desemvolvedor Web</figcaption>
+                        <img src="" alt="imagem desemvolvimento web"> <span>Desemvolvedor web</span>
+                    </figure>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate, neque!</p>
                 </li>
-                <li><img src="" alt="imagem ediçao de video"> <samp>Ediçao de video</samp>
+
+                <li>
+                    <figure>
+                        <figcaption>Ediçao de Video</figcaption>
+                        <img src="" alt="imagem ediçao de video">
+                    </figure>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate, neque!</p>
                 </li>
-                <li><img src="" alt="imagem desemvolvimento web"> <samp>Desing grafico</samp>
+
+                <li>
+                    <figure>
+                        <figcaption>Desing grafico</figcaption>
+                        <img src="" alt="imagem desemvolvimento web">
+                    </figure>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate, neque!</p>
                 </li>
             </ul>
         </section>
 
         <section class="secPortfolio">
+            <h2>PORTFOLIO</h2>
             <ul>
-                <h2>PORTFOLIO</h2>
                 <li><a href="#"><img src="" alt="galeria01"><span>galeria01</span></a></li>
                 <li><a href="#"><img src="" alt="galeria02"><span>galeria02</span></a></li>
                 <li><a href="#"><img src="" alt="galeria03"><span>galeria03</span></a></li>
             </ul>
         </section>
 
-        <article class="secSobremin">
+        <section class="secSobremin">
             <h2>SOBRE MIN</h2>
 
-            <P>Lorem ipsum <strong>Christians Jesus Matute Cabrera</strong> dolor sit amet consectetur adipisicing elit.
+            <p>Lorem ipsum <strong>Christians Jesus Matute Cabrera</strong> dolor sit amet consectetur adipisicing elit.
                 Laborum reiciendis ducimus ex exercitationem
                 illum aliquam sit ratione fugiat? Nulla voluptas officia temporibus dolore veritatis est placeat?
-                Quibusdam perferendis eligendi nihil.</P>
+                Quibusdam perferendis eligendi nihil.</p>
 
             <img src="#" alt="imagen de perfil">
-        </article>
+
+        </section>
 
         <section class="secContato">
-            <section>
-                <h3> ENTRE EM CONTATO</h3>
+            <h3> ENTRE EM CONTATO</h3>
+            <div>
                 <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, tenetur.</P>
                 <ul>
                     <li><img src="" alt="icone telefoni">
@@ -89,48 +107,39 @@
                         <p>christiansjesus22@gmail.com</p>
                     </li>
                 </ul>
-            </section>
+            </div>
 
             <div>
-                <p> <strong>oi!</strong>,em que posso ajudar?</p>
+                <p> <span>oi!</span>,em que posso ajudar?</p>
                 <form action="#" method="POST">
-                    <ul>
-                        <li>
-                            <label for="name">Nombre:</label>
-                            <input type="text" id="name" name="user_name">
-                        </li>
+                    <div>
+                        <label for="name">Nombre:</label>
+                        <input type="text" id="name" name="user_name">
+                    </div>
 
-                        <li>
-                            <label for="mail">Correo electrónico:</label>
-                            <input type="email" id="mail" name="user_mail">
-                        </li>
+                    <div>
+                        <label for="mail">Correo electrónico:</label>
+                        <input type="email" id="mail" name="user_mail">
+                    </div>
 
-                        <li>
-                            <label for="phone">telefoni:</label>
-                            <input type="tel" id="phone" name="user_phone">
-                        </li>
+                    <div>
+                        <label for="phone">telefoni:</label>
+                        <input type="tel" id="phone" name="user_phone">
+                    </div>
 
-                        <li>
-                            <label for="msg">Mensaje:</label>
-                            <textarea id="msg" name="user_message"></textarea>
-                        </li>
-                    </ul>
+                    <div>
+                        <label for="msg">Mensaje:</label>
+                        <textarea id="msg" name="user_message"></textarea>
+                    </div>
+
                     <input type='submit' value='Enviar Mensagem'>
                 </form>
             </div>
-
         </section>
     </main>
-
+    
     <footer>
-        <p><strong>logo de ejemplo</strong> Todos os Direitos Reservados &copy; 2020 </p>
-        <aside>
-            <ul>
-                <li><a href=""><img src="" alt="icone facebook"></a></li>
-                <li><a href=""><img src="" alt="icone you tube"></a></li>
-                <li><a href=""><img src="" alt="icone linkedin"></a></li>
-            </ul>
-        </aside>
+        <p><span>logo de ejemplo</span> Todos os Direitos Reservados &copy; 2020 </p>
     </footer>
 </body>
 

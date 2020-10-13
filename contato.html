@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
@@ -9,37 +9,46 @@
 
 <body>
     <header>
-        <div class="barnav">
-            <img class="logotipo" src="" alt="logotipo de da pagina">
-            <nav>
-                <ul class="menu">
-                    <li><a href="">HOME</a></li>
-                    <li><a href="">SOBRE MIN</a></li>
-                    <li><a href="">PORTFOLIO</a></li>
-                    <Li class="linhaMenu"><a href="">CONTATO</a></Li>
-                </ul>
-
-                <ul class="social">
-                    <li><a href=""><img src="" alt="icone facebook"></a></li>
-                    <li><a href=""><img src="" alt="icone you tube"></a></li>
-                    <li><a href=""><img src="" alt="icone linkedin"></a></li>
-                </ul>
-            </nav>
-        </div>
-        <h1>CONTATO</h1>
-        <p>christians <strong> J.M.C</strong></p>
-
         <picture>
             <source srcset="" media="(min-width: 800px)">
             <source srcset="" media="(min-width: 600px)">
-            <img src="" alt="ilustration foto cidade manaus">
+            <img src="images/fondoimage.png" alt="ilustration imagem cover">
         </picture>
 
+        <div class="paddininterno">
+            <div class="barnav">
+                <img class="logotipo" src="icon/logotpagq.png" alt="logotipo de da pagina">
+                <nav>
+                    <ul class="menu">
+                        <li><a href="">HOME</a></li>
+                        <li><a href="">SOBRE MIN</a></li>
+                        <li><a href="">PORTFOLIO</a></li>
+                        <Li class="linhaMenu"><a href="">CONTATO</a></Li>
+                    </ul>
+
+                    <ul class="social">
+                        <li><a href=""><img src="icon/facebookicon.png" alt="icone facebook"></a></li>
+                        <li><a href=""><img src="icon/youtibeicon.png" alt="icone you tube"></a></li>
+                        <li><a href=""><img src="icon/linkedinicon.png" alt="icone linkedin"></a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="titulo">
+                <p> eu posso ajudar no seus projetos de</p>
+                <p class="titulochange">EDIÇAO DE VIDEO</p>
+                <h1>christians<span>J.M.C</span></h1>
+            </div>
+        </div>
     </header>
+
     <main>
+        
         <section class="secContato2">
-            <section>
-                <h3> ENTRE EM CONTATO</h3>
+
+            <h3> ENTRE EM CONTATO</h3>
+
+            <div>
                 <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam,tenetur.</P>
 
                 <iframe
@@ -55,49 +64,41 @@
                         <p>christiansjesus22@gmail.com</p>
                     </li>
                 </ul>
-
-            </section>
-
+            </div>
+           
             <div>
-                <p> <strong>oi!</strong>,em que posso ajudar?</p>
+                <p> <span>oi!</span>,em que posso ajudar?</p>
                 <form action="#" method="POST">
-                    <ul>
-                        <li>
-                            <label for="name">Nombre:</label>
-                            <input type="text" id="name" name="user_name">
-                        </li>
+                    <div>
+                        <label for="name">Nombre:</label>
+                        <input type="text" id="name" name="user_name">
+                    </div>
 
-                        <li>
-                            <label for="mail">Correo electrónico:</label>
-                            <input type="email" id="mail" name="user_mail">
-                        </li>
+                    <div>
+                        <label for="mail">Correo electrónico:</label>
+                        <input type="email" id="mail" name="user_mail">
+                    </div>
 
-                        <li>
-                            <label for="phone">telefoni:</label>
-                            <input type="tel" id="phone" name="user_phone">
-                        </li>
+                    <div>
+                        <label for="phone">telefoni:</label>
+                        <input type="tel" id="phone" name="user_phone">
+                    </div>
 
-                        <li>
-                            <label for="msg">Mensaje:</label>
-                            <textarea id="msg" name="user_message"></textarea>
-                        </li>
-                    </ul>
+                    <div>
+                        <label for="msg">Mensaje:</label>
+                        <textarea id="msg" name="user_message"></textarea>
+                    </div>
+
                     <input type='submit' value='Enviar Mensagem'>
                 </form>
             </div>
-
         </section>
     </main>
+    
     <footer>
         <p><strong>logo de ejemplo</strong> Todos os Direitos Reservados &copy; 2020 </p>
-        <aside>
-            <ul>
-                <li><a href=""><img src="" alt="icone facebook"></a></li>
-                <li><a href=""><img src="" alt="icone you tube"></a></li>
-                <li><a href=""><img src="" alt="icone linkedin"></a></li>
-            </ul>
-        </aside>
     </footer>
+
 </body>
 
 </html>
