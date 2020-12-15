@@ -1,0 +1,367 @@
+* {
+  text-decoration: none;
+  color: white;
+  scroll-behavior: smooth;
+
+}
+
+body {
+  width: 1366;
+  font-family: "Roboto Mono", monospace;
+  font-weight: 400;
+}
+
+.subtitle{
+  font-size: 40px;
+  margin-bottom: 30px;
+  color: rgb(68, 73, 79);
+  font-weight: 400;
+  text-decoration: underline rgb(241, 166, 15);
+}
+
+
+header {
+  margin-top: 100px;
+  text-align: center;
+  line-height: 50px auto;
+  padding: 10px;
+}
+
+.headerimg {
+  background-image: url("images/imgheader.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 730px;
+}
+
+.titleChange {
+  display: inline;
+  font-size: 80px;
+  font-family: 'Dosis', sans-serif ;
+  font-weight: 300;
+  letter-spacing: 6px;
+  border-radius: 1px ;
+  animation: change 4s infinite;
+}
+
+@keyframes change{
+
+0%{
+  letter-spacing:  -2px;
+  opacity: 0;
+}
+
+60%{
+  letter-spacing:  8px;
+  opacity: 1;
+}
+
+85%{
+opacity: 1;
+letter-spacing:  8px;
+}
+
+100%{
+  opacity: 0;
+  letter-spacing:  6px;
+}
+
+}
+ 
+
+
+.textTitle {
+  font-size: 25px;
+  font-weight: 200;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.textTitle span {
+  font-family: "Shadows Into Light", cursive;
+  font-size: 30px;
+  color: rgb(241, 166, 15);
+}
+
+.barnav {
+  display: flex;
+  justify-content: space-between;
+  padding:30px;
+
+}
+
+.logotipo {
+  width: 200px;
+}
+nav ul {
+  display: flex;
+}
+nav ul li {
+  margin-left: 20px;
+  font-size: 15px;
+  align-items: center;
+  font-weight: 600;
+}
+
+nav ul li :hover {
+  color: rgb(175, 170, 159);
+  opacity: 0.5;
+}
+
+nav ul .linhaMenu {
+  border-right: solid rgb(241, 166, 15) 3px;
+  padding-right: 10px;
+}
+
+nav ul .icone img {
+  max-height: 15px;
+}
+
+.midle {
+  display: flex;
+  justify-content: center;
+  margin-top: 70px;
+}
+.boxScroll {
+  width: 25px;
+  height: 50px;
+  border: solid 3px;
+  border-radius: 60px;
+}
+
+.boxScroll:hover {
+  width: 25px;
+  height: 50px;
+  border: solid 5px;
+  border-radius: 60px;
+  animation: hov 0.5s;
+}
+@keyframes hov {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0.5;
+  }
+}
+
+.boxScroll::before {
+  display: flex;
+  justify-content: end;
+  content: "";
+  width: 10px;
+  height: 10px;
+  background-color: rgb(241, 149, 26);
+  transform: translate(70%);
+  border-radius: 50%;
+  opacity: 0;
+  animation: befor 1.5s infinite;
+}
+
+@keyframes befor {
+  from {
+    opacity: 0;
+    position: relative;
+    top: 0px;
+  }
+
+  to {
+    position: relative;
+    opacity: 1;
+    top: 35px;
+  }
+}
+
+.secServices {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  text-align: center;
+  padding: 30px;
+}
+
+.secServices .titlesec {
+  margin-bottom: 30px;
+  font-size: 20px;
+  font-weight: 200;
+  color: rgb(68, 73, 79);
+}
+
+.secServices ul {
+  display: flex;
+  justify-items: center;
+  justify-content: space-around;
+}
+
+.secServices ul li {
+  width: 20%;
+  color: rgb(68, 73, 79);
+}
+
+.secServices ul li h4 {
+  font-size: 25px;
+  margin-bottom: 10px;
+  font-weight: 400;
+  color: rgb(68, 73, 79);
+  border-top: rgb(241, 149, 26)solid 5px;
+}
+
+.secServices ul li p {
+  font-size: 15px;
+  font-weight: 200;
+  color: rgb(68, 73, 79);
+  text-align: justify;
+}
+
+.secServices ul li img {
+  width: 50%;
+}
+
+.secPortfolio {
+  background-color:rgb(29, 33, 34);
+  padding: 30px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.secPortfolio h2 {
+  font-size: 40px;
+  margin-bottom: 30px;
+  font-weight: 400;
+  text-decoration: underline rgb(241, 149, 26);
+}
+.secPortfolio p {
+  margin-bottom: 30px;
+  font-size: 20px;
+  font-weight:200;
+}
+
+.secPortfolio ul {
+  display: flex;
+  justify-items: center;
+  justify-content: space-between;
+}
+
+.secPortfolio ul li {
+  width: 30%;
+}
+
+.secPortfolio ul li img {
+  width: 100%;
+}
+
+.secPortfolio .boxButton {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 10px;
+  margin-top: 30px;
+}
+
+.secPortfolio button {
+background-color: rgb(241, 149, 26);
+color:white;
+font-size:20px;
+padding: 20px;
+border-radius: 3px;
+}
+
+.secSobremin{
+  height: 400px;
+  padding:30px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.secSobremin p {
+  font-size: 20px;
+  font-weight:200;
+  color: rgb(68, 73, 79);
+  text-align: justify;
+}
+.secSobremin p strong{
+  color: rgb(241, 166, 15);
+  font-weight: 400;
+}
+
+.secSobremin img{
+  max-height: 400px;
+  max-width: 50%;
+ float: right;
+ margin-left: 20px;
+}
+
+.secContato{
+  padding: 30px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  
+}
+
+
+.secContato .boxcontact .oi{
+    margin-bottom: 20px;
+    text-decoration: none;
+
+  }
+
+  .secContato .boxcontact{
+  float: right;
+  width: 50%;
+
+  border-radius: 5px;
+  background-color: rgb(241, 149, 26);
+}
+
+.secContato .contacleft{
+  width: 40%;
+}
+
+.secContato .paramarginbotton{
+  color: rgb(68, 73, 79);
+  font-size: 20px;
+  font-weight:200;
+  margin-bottom: 30px;
+  padding-bottom:30px ;
+  border-bottom: 2px solid rgb(68, 73, 79);
+  
+}
+
+.secContato  ul li {
+display: flex;
+margin-bottom: 10px;
+}
+
+.secContato ul li p{
+  color: rgb(68, 73, 79);
+}
+
+.secContato ul li img {
+   max-width: 30px;
+ }
+
+form{
+  padding: 10px;
+}
+
+ input{
+   color: rgb(68, 73, 79);
+   opacity: 10px;
+   width: 90%;
+   font-family: "Roboto Mono", monospace, serif;
+   font-weight: 200;
+   margin-bottom: 10px;
+   font-size: 20px;
+  border: white;
+ }
+
+ textarea{
+   color: rgb(68, 73, 79);
+   width: 90%;
+   height: 100px;
+ }
+
+ .botonsend{
+  margin-top: 30px; 
+  width: 20%;
+ }
+
